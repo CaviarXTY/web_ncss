@@ -1,0 +1,261 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #424242;
+	list-style: none;/*列表样式*/
+	text-decoration: none;/*文字装饰*/
+	font-style:normal;/*字体样式*/
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+	overflow-x: hidden; /*隐藏横向滚动条*/
+	overflow-y: hidden;
+	/*background: url(../picture/background.jpg)no-repeat fixed center top;*/
+}
+a{
+	text-decoration: none;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+@media screen and (max-height: 720px) {
+	#footer{
+		bottom: -170px;
+		animation:footerback 0.5s ease forwards;
+		-moz-animation:footerback 0.5s ease forwards;
+		-webkit-animation:footerback 0.5s ease forwards;
+		-o-animation:footerback 0.5s ease forwards;
+	}
+	#footer:hover{
+		animation:footermove 0.5s ease forwards;
+		-moz-animation:footermove 0.5s ease forwards;
+		-webkit-animation:footermove 0.5s ease forwards;
+		-o-animation:footermove 0.5s ease forwards;
+	}
+	@keyframes footermove
+	{
+		form{bottom:-170px;}
+		to{bottom:0;}
+	}
+	@-webkit-keyframes footermove
+	{
+		form{bottom:-170px;}
+		to{bottom:0;}
+	}
+	@keyframes footerback
+	{
+		form{bottom:0;}
+		to{bottom:-170px;}
+	}
+	@-webkit-keyframes footerback
+	{
+		form{bottom:0;}
+		to{bottom:-170px;}
+	}
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: #ddd;
+}
+
+.login-wrap,
+.login-wrap .login,
+.login-wrap .enlogin{
+	width: 800px;
+	height: 400px;
+}
+.login-wrap{
+	/*display: none;*/
+	/*border: 0.5px solid #000;*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -266px;
+	margin-left: -400px;
+	background-color: #eee;
+
+	/*焦距*/
+	-webkit-perspective: 1500;
+	-moz-perspective: 1500;
+	-ms-perspective: 1500;
+	perspective: 1500;
+
+	-moz-transform: perspective(1500px);
+	-ms-transform: perspective(1500px);
+	/*设定3d*/
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+}
+@media screen and (max-height: 720px) {
+	.login-wrap{
+		margin-top: -180px;
+	}
+}
+
+.login-wrap .login{
+	background-color: #6ad2cd00;
+	z-index: 2;
+}
+.login-wrap .enlogin{
+	background-color: #d2826a00;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.login-wrap .login,
+.login-wrap .enlogin{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+}
+.login-wrap.ch .login{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.login-wrap.ch .enlogin{	
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	z-index: 3; /* 降级处理不支持CSS3的浏览器，只是简单的将back上升盖住front */
+}
+
+.wrapper .login-wrap .login-box .pad{
+	border: 1px solid #4c4c4c60;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 30px 40px;
+}
+.wrapper .login-wrap .login-box .value-box{
+	/*border: 1px solid #4c4c4c80;*/
+	width: 100%;
+	height: 60px;
+}
+.wrapper .login-wrap .box{
+	/*border: 1px solid #4c4c4c80;*/
+	border-right: 1px solid #4c4c4c80;
+	border-top: 1px solid #0000;
+	float: left;
+	width: 480px;
+	height: 260px;
+}
+.wrapper .login-wrap .box form{
+	/*border: 1px solid #000;*/
+	width: 350px;
+	height: 200px;
+	margin-left: 45px;
+	margin-top: 30px;
+}
+.wrapper .login-wrap .box form p{
+	/*border: 1px solid #4c4c4c80;*/
+	margin-bottom: 10px;
+	margin: 30px 20px;
+}
+.wrapper .login-wrap .box form span{
+	/*background-color: #fff;*/
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	vertical-align: bottom;
+}
+.wrapper .login-wrap .box input{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #4c4c4c;
+	background-color: #0000;
+	width: 200px;
+	height: 30px;
+	margin-left: 15px;
+	font-size: 18px;
+}
+.wrapper .login-wrap .box button{
+	border: 1px solid #4c4c4c80;
+	border-radius: 5px;
+	background-color: #0000;
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 120px;
+}
+.wrapper .login-wrap .box .findpw{
+	text-align: center;
+}
+
+.pad .qrcode-box{
+	/*border: 1px solid #123;*/
+	float: right;
+	width: 230px;
+	height: 260px;
+	margin-right: -10px; 
+	text-align: center;
+}
+.pad .qrcode-box img{
+	margin-top: 80px;
+}
+.pad .qrcode-box .download-qrcode-img{
+	display: inline-block;
+	width: 96px;
+	height: 96px;
+	background: url(../img/qrcode3.png)no-repeat;
+	margin-top: 80px;
+}
+.pad .qrcode-box + a{
+	border: 1px solid #4c4c4c50;
+	border-left: 1px solid #eee;
+	position: absolute;
+	top: 127px;
+	right: -27px;
+	display: inline-block;
+	width: 20px;
+	height: 128px;
+	font-size: 16px;
+	padding: 8px 3px;
+	background-color: #eee;
+}
+.pad .title{
+	position: absolute;
+	bottom: -20px;
+	right: -20px;
+	border: 1px solid #4c4c4c50;
+	width: 200px;
+	height: 70px;
+	font-size: 22px;
+	letter-spacing: 3px;
+	color: #4c4c4c60;
+}
+
+.pad .title p{
+	position: relative;
+	top: 10px;
+	right: -120px;
+}
+

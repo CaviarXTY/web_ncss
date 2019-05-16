@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #424242;
+	list-style: none;/*鍒楄〃鏍峰紡*/
+	text-decoration: none;/*鏂囧瓧瑁呴グ*/
+	font-style:normal;/*瀛椾綋鏍峰紡*/
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	overflow-x: hidden; /*闅愯棌妯悜婊氬姩鏉�*/
+}
+a{
+	text-decoration: none;
+}
+b{
+	font-weight:normal;
+}
+
+
+.wrapper{
+	position: relative;
+	border: 1px solid #0000;
+	width: 1180px;
+	margin: 94px auto;
+}
+.title-wrap{
+	/*border: 1px solid #000;*/
+	height: 30px;
+	padding: 20px;
+}
+.title-wrap b{
+	display: inline-block;
+	float: left;	
+	height: 30px;
+	line-height: 30px;
+	font-size: 25px;
+	margin-left: 30px;
+}
+.title-wrap input{
+	border: 3px solid #58759c;
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+	margin-left: 250px;
+	vertical-align: 1.5px;
+}
+.title-wrap button{
+	border: none;
+	width: 100px;
+	height: 36px;
+	font-size: 18px;
+	margin-left: -5px;
+	color: #eee;
+	background-color: #58759c;
+}
+
+.search-wrap{
+	margin-top: 30px;
+	width: 1180px;
+	border: 1px solid #666;
+	background: #f9f9f9;
+}
+.search-wrap .box{
+	/*border: 1px solid #000;*/
+	width: 1122px;
+	padding: 20px 30px;
+}
+.search-wrap .box:nth-child(2){
+	border-top: 1px dashed #ccc;
+}
+.search-wrap .box.type{
+	height: 160px;
+}
+.search-wrap .box.province{
+	height: 165px;
+}
+.search-wrap .box form{
+	display: none;
+}
+.search-wrap .box b{
+	/*border: 1px solid #000;*/
+	display: inline-block;
+	float: left;
+	width: 80px;
+	height: 70px;
+	text-align: center;
+}
+.search-wrap .box a{
+	/*border: 1px solid #000;*/
+	float: left;
+	border-radius: 4px;
+	margin-left: 30px;
+	margin-bottom: 25px;
+	padding: 1px 15px;
+	font-size: 14px;
+}
+.search-wrap .box .focus{
+	color: #f4f4f4;
+	background-color: #58759c;
+}
+.search-wrap .box ul{
+	/*border: 1px solid #000;*/
+	float: left;
+	width: 950px;
+}
+.search-wrap .box ul li{
+	float: left;
+}
+
+
+
+.table-wrap{
+	margin-top: 40px;
+}
+.table-wrap .table a{
+	display: inline-block;
+/*	background-color: #f16d7a;*/
+}
+.table-wrap .table a{
+	display: inline-block;
+	background-color: #fff;
+}
+.table-wrap .table a:nth-child(even){
+	background-color: #e9edf3;
+}
+.table-wrap .table li{
+	/*border: 1px solid #000;*/
+	width: 1180px;
+	height: 120px;
+	line-height: 120px;
+}
+.table-wrap .table li b{
+	display: inline-block;
+	text-align: center;
+}
+.table-wrap .table li b span{
+	position: relative;
+	display: inline-block;
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	vertical-align: -20px;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.table-wrap .table li b span img{
+	position: absolute;
+	/*top: -16px;*/
+	left: 0;
+	width: 50px;
+	height: 50px;
+}
+.table-wrap .table li b:nth-child(1){
+	/*border: 1px solid #000;*/
+	width: 350px;
+	text-align: left;
+	padding-left: 30px;
+}
+.table-wrap .table li.enlist b:nth-child(1){
+	/*border: 1px solid #000;*/
+	width: 150px;
+	text-align: left;
+	padding-left: 30px;
+}
+.table-wrap .table li b:nth-child(2){
+	/*border: 1px solid #000;*/
+	width: 150px;
+}
+.table-wrap .table li.enlist b:nth-child(2){
+	/*border: 1px solid #000;*/
+	width: 350px;
+}
+.table-wrap .table li b:nth-child(3){
+	/*border: 1px solid #000;*/
+	width: 270px;
+}
+.table-wrap .table li b:nth-child(4){
+	/*border: 1px solid #000;*/
+	width: 200px;
+}
+.table-wrap .table li b:nth-child(5){
+	/*border: 1px solid #000;*/
+	width: 150px;
+}
+.table-wrap .table li#th{
+	height: 40px;
+	line-height: 40px;
+	background-color: #58759c;
+}
+
+
+.table-wrap .page{
+	/*border: 1px solid #000;*/
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+}
+.table-wrap .page ul{
+	display: inline-block;
+}
+.table-wrap .page ul li{
+	float: left;
+	margin-right:15px;
+}
+.table-wrap .page ul li a{
+	border-radius: 5px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+/* 	margin-left: 15px; */
+	color: #f4f4f4;
+	background-color: #58759c;
+}
+.table-wrap .page input{
+	width: 30px;
+	height: 20px;
+	font-size: 18px;
+}
+.table-wrap .page ul li #next{
+	margin-right: 40px;
+}
+.table-wrap .page ul li #prev,
+.table-wrap .page ul li #next,
+.table-wrap .page ul li .long,
+.table-wrap .page ul li #page-btn{
+	width: 70px;
+}

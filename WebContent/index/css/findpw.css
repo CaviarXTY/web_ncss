@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #424242;
+	list-style: none;/*列表样式*/
+	text-decoration: none;/*文字装饰*/
+	font-style:normal;/*字体样式*/
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+	overflow-x: hidden; /*隐藏横向滚动条*/
+	overflow-y:hidden;
+	/*background: url(../picture/background.jpg)no-repeat fixed center top;*/
+}
+a{
+	text-decoration: none;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+@media screen and (max-height: 720px) {
+	#footer{
+		bottom: -170px;
+		animation:footerback 0.5s ease forwards;
+		-moz-animation:footerback 0.5s ease forwards;
+		-webkit-animation:footerback 0.5s ease forwards;
+		-o-animation:footerback 0.5s ease forwards;
+	}
+	#footer:hover{
+		animation:footermove 0.5s ease forwards;
+		-moz-animation:footermove 0.5s ease forwards;
+		-webkit-animation:footermove 0.5s ease forwards;
+		-o-animation:footermove 0.5s ease forwards;
+	}
+	@keyframes footermove
+	{
+		form{bottom:-170px;}
+		to{bottom:0;}
+	}
+	@-webkit-keyframes footermove
+	{
+		form{bottom:-170px;}
+		to{bottom:0;}
+	}
+	@keyframes footerback
+	{
+		form{bottom:0;}
+		to{bottom:-170px;}
+	}
+	@-webkit-keyframes footerback
+	{
+		form{bottom:0;}
+		to{bottom:-170px;}
+	}
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+	background-color: #ddd;
+}
+
+
+.inputpad{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	width: 800px;
+	height: 400px;
+
+	margin-top: -266px;
+	margin-left: -400px;
+	background-color: #eee;
+}
+@media screen and (max-height: 720px) {
+	.inputpad{
+		margin-top: -180px;
+	}
+}
+
+.inputpad .tip{
+	/*border: 1px solid #000;*/
+	position: absolute;
+	top: -45px;
+	left: 0;
+	width: 570px;
+	height: 40px;
+	padding-left: 25px;
+}
+.inputpad .tip p{
+	line-height: 40px;
+	color: #ff000060;
+}
+
+
+.inputpad .first{
+	/*border: 1px solid #000;*/
+	position: relative;
+	width: 600px;
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 160px;
+}
+.inputpad .first form p{
+	font-size: 20px;
+	color: #5d5d5d;
+	text-align: center;
+	line-height: 80px;
+}
+.inputpad .first form input{
+	/*border-radius: 4px;*/
+	width: 200px;
+	height: 30px;
+	vertical-align: 3px;
+}
+.inputpad .first form button{
+	border: 1px solid #5d5d5d;
+	border-radius: 4px;
+	width: 50px;
+	height: 32px;
+	margin-left: 20px;
+	vertical-align: 2px;
+	background-color: #eee;
+	color: #666;
+}
+
+
+.inputpad .second{
+	/*border: 1px solid #000;*/
+	position: relative;
+	width: 520px;
+	height: 220px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+.inputpad .second .link a{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 220px;
+	height: 220px;
+	vertical-align: bottom;
+	line-height: 220px;
+	text-align: center;
+}
+.inputpad .second .link span{
+	display: inline-block;
+	width: 2px;
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+	background-color: #ccc;
+	margin: 0 32px;
+}
+
+.inputpad .fourth{
+	/*border: 1px solid #000;*/
+	position: relative;
+	width: 450px;
+	height: 165px;
+	margin: 0 auto;
+	margin-top: 130px;
+}
+.inputpad .fourth form p{
+	/*border: 1px solid #000;*/
+	width: 340px;
+	margin: 0 auto;
+}
+.inputpad .fourth form span{
+	/*border: 1px solid #000;*/
+	display: inline-block;
+	width: 90px;
+	text-align: center;
+	font-size: 20px;
+	color: #5d5d5d;
+	margin-top: 20px;
+}
+.inputpad .fourth form input{
+	width: 200px;
+	height: 30px;
+	vertical-align: 3px;
+	margin: 0 20px;
+}
+.inputpad .fourth form button{
+	border: 1px solid #5d5d5d;
+	border-radius: 4px;
+	width: 50px;
+	height: 32px;
+	margin-left: 370px;
+	margin-top: 20px;
+	vertical-align: 2px;
+	background-color: #eee;
+	color: #666;
+}

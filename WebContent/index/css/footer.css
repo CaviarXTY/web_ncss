@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #424242;
+	list-style: none;/*列表样式*/
+	text-decoration: none;/*文字装饰*/
+	font-style:normal;/*字体样式*/
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+	overflow-x: hidden; /*隐藏横向滚动条*/
+}
+a{
+	text-decoration: none;
+}
+
+.footer{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #ccc;
+	padding: 25px 0;
+}
+.footer .footer-wrap{
+	/*border: 1px solid #000;*/
+	width: 1180px;
+	height: 150px;
+	margin: 0 auto;
+}
+.footer .footer-wrap .inf-wrap{
+	/*border: 1px solid #f00;*/
+	width: 600px;
+	height: 150px;
+	float: left;
+}
+.footer .footer-wrap .inf-wrap img{
+	float: left;
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	margin: 25px;
+}
+.footer .footer-wrap .inf-wrap .inf-box{
+	/*border: 1px solid #00f;*/
+	width: 450;
+	padding-top: 45px;
+}
+.footer .footer-wrap .inf-wrap .inf-box p{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 17px;
+	color: #333;
+}
+
+.footer .footer-wrap .qrcode{
+	/*border: 1px solid #00f;*/
+	float: right;
+	width: 150px;
+	height: 130px;
+	text-align: center;
+	margin-right: 20px;
+	margin-top: 20px;
+}
